@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMove | Carrito de compras</title>
+    
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+        
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/iconoSmart.png" id="logo" alt="logo SartMove"></a>
+            <div>
+                <a href="./suplementos.html">Suplementos</a>
+                <a href="./carrito.html"><img src="../img/carrito.png" alt="imagen carrito"><span id="contador-carrito"> 0 </span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="productos-container-carrito" class="productos-container-carrito"></section>
+        <section id="totales" class="totales">
+            <p>Productos Totales: <span id="unidades" class="unidades">0</span></p>
+            <p>Precio: $ <span id="precio" class="precio">0</span></p>
+            <div>
+                <button>Comprar</button>
+                <button>Cancelar Compra</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+        <a href="">ya vemos que poner</a>
+    </footer>
+    
+    <script src="../js/suplementos.js"></script>
+    <script src="../js/carrito.js"></script>
+    
+</body>
+</html>

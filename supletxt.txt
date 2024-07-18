@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Proteina Ena",
+        "img": "../img/suplementos/suplemento1.jpg",
+        "precio": 16000,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Proteina Syntha-6",
+        "img": "../img/suplementos/suplemento2.jpg" ,
+        "precio": 26000,
+        "cantidad": 1
+    },    
+    {
+        "id": 3,
+        "nombre": "Pre entreno Ena" ,
+        "img": "../img/suplementos/suplemento3.jpg",
+        "precio": 11000 ,
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Animal Pak" ,
+        "img": "../img/suplementos/suplemento4.jpg" ,
+        "precio": 55000,
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Creatina Universal" ,
+        "img": "../img/suplementos/suplemento5.jpg" ,
+        "precio": 8000,
+        "cantidad": 1
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "nombre": "Proteina ENA",
+        "img": "../img/suplementos/suplemento1.jpg",
+        "detalle": "930 gr.",
+        "precio": 32500,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Proteina Syntha-6",
+        "img": "../img/suplementos/suplemento2.jpg" ,
+        "detalle": "1,12 kg.",
+        "precio": 87000,
+        "cantidad": 1
+    },    
+    {
+        "id": 3,
+        "nombre": "Pre entreno ENA" ,
+        "img": "../img/suplementos/suplemento3.jpg",
+        "detalle": "400 gr.",
+        "precio": 23000 ,
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Pre entreno C4",
+        "img": "../img/suplementos/suplemento4.jpg" ,
+        "detalle": "390gr.",
+        "precio": 95000,
+        "cantidad": 1
+    }, 
+    {
+        "id": 5,
+        "nombre": "Animal Pak" ,
+        "img": "../img/suplementos/suplemento5.jpg" ,
+        "detalle": "44 packs",
+        "precio": 94000,
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Creatina Ultra Tech" ,
+        "img": "../img/suplementos/suplemento6.jpg" ,
+        "detalle": "500gr.",
+        "precio": 53000,
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Creatina Universal" ,
+        "detalle": "200gr.",
+        "img": "../img/suplementos/suplemento7.jpg" ,
+        "precio": 19500,
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "BCAA GenTech" ,
+        "img": "../img/suplementos/suplemento8.jpg" ,
+        "detalle": "120 tabs",
+        "precio": 12999,
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "nombre": "BCAA Optimum Nutrition" ,
+        "img": "../img/suplementos/suplemento9.jpg" ,
+        "detalle": "354gr.",
+        "precio": 110000,
+        "cantidad": 1
+    }
+
+]
+
+

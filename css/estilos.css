@@ -1,0 +1,962 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/*!   -----------   HEADER  -------------------*/
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border:1px rgb(188, 192, 240) solid;
+    /* margin-bottom: 10px; */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+header nav #logo {
+    height: 40px;
+}
+
+header nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+
+header nav div a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    border: white 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 20px;
+    color: white;
+    font-weight:600;
+
+}
+
+header nav div a:hover {
+    background-color: rgb(236, 236, 236);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+
+}
+
+header nav div .numero-carrito {
+    position: absolute;
+    top: 40px;
+    aspect-ratio: 1;
+    background-color: rgb(18, 2, 158);
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 14px;
+    margin-left: 25px;
+    display: none;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+
+}
+
+/**!   -----------   MAIN  -------------------*/
+main{
+    flex-grow: 1;
+}
+                    /**Index*/
+
+.hero {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* height: calc(100vh - 58px); */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero img {
+    margin-top: 30px;
+    display: flex;
+}
+
+.hero h1 {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.808);
+    font-size: 30px;
+    margin: 4px;
+    padding: 4px
+}
+
+.hero h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+} 
+.hero a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px rgb(238, 238, 238) solid;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.hero a:hover {
+    background-color: rgb(236, 236, 236);
+    color: rgb(0, 0, 0);
+    border: 2px rgb(0, 0, 0) solid;
+}
+
+.hero h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+                    /**Suplementos*/
+
+
+.main-suplementos{
+    background-image: url(../img/back.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-suplementos .productos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.main-suplementos .productos-container .tarjeta-producto-carrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    background-color: rgb(167, 161, 161);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.main-suplementos .productos-container div h3 {
+    margin: 5px;
+    text-align: center;
+}
+
+.main-suplementos .productos-container div h4 {
+    margin: 5px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.main-suplementos .productos-container div img {
+    /* width: 100%; */
+    height: 180px;
+    width: 140;
+    aspect-ratio: 1.2;
+    overflow-x: hidden;
+    
+
+}
+
+.main-suplementos .productos-container div span {
+    margin: 5px;
+    text-align: center;
+    color: rgb(5, 5, 100);
+    font-weight: 500;
+}
+
+.productos-container div button {
+    margin: 5px;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+                    /**GRID PAGOS*/
+
+
+.gridPagos{
+    background-color: rgba(2, 2, 2, 0.808);
+    width: 60%; 
+    margin: 0 auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    border-radius: 20px;
+}
+.gridPagos .parrafo1{    
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.gridPagos .tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.gridPagos .tarjetas img{
+    width: 60px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 2px;
+    margin-bottom: 10px;
+    
+}
+.gridPagos .parrafo2{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.gridPagos .envio{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.gridPagos .envio div img{
+    width: 60px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+.gridPagos .parrafo3{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.gridPagos .parrafo3 p {
+    font-size: 20px; 
+}
+
+.gridPagos .parrafo3 .animate__pulse {
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite; 
+}
+
+
+                    /**Modal CARRTIO*/
+
+
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 70vh;
+    color: rgb(10, 10, 10);
+    background-color: rgb(118, 118, 119);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 15vh;
+    background-image: linear-gradient(to bottom right, rgb(36, 36, 36),rgb(117, 115, 115));
+    box-shadow: 0 0 3px 3px rgb(0, 0, 0, .5);
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+                    /* Modal header*/
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.modal-header-title {
+    align-items: center;
+    margin: 6px;
+    margin-left:  30px;
+    font-size: 30px;
+}
+
+.modal-container .modal-header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 6px;
+    margin-right:  30px;
+    color: rgb(241, 238, 238);
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.3s;
+    
+
+    
+}
+.modal-container .modal-header-button:hover{
+    transform: translateY(-1px);
+    font-weight: bold;
+}
+
+                    /*modal body*/
+.modal-container .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.modal-container .modal-content h3{
+    width: 19%;
+    text-align: center;
+}
+
+.modal-container .modal-content img {
+    align-items: center;
+    margin: 10px;
+    width: 110px;
+    height: 110px;
+}
+.modal-container .modal-content div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+.modal-container .modal-content div .sumar{
+    color: rgb(31, 40, 168);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;  
+}
+.modal-container .modal-content div p{
+    width: 100%;
+    font-weight: bold;
+    padding: 2px;
+    
+}
+.modal-container .modal-content div .CantidadNum{
+    color: rgb(31, 40, 168);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 3px;
+}
+.modal-container .modal-content div .restar{
+    color: rgb(31, 40, 168);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;  
+}
+.modal-container .modal-content .quitar-producto{
+    cursor: pointer;
+    border:rgb(0, 0, 0) 1px solid;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.modal-container .modal-content .quitar-producto:hover{
+    padding: 6px;
+    background-color: rgb(96, 85, 250);
+    color: white;
+    box-shadow: -1px 1px 26px -4px rgba(0,0,0,0.86);
+    -webkit-box-shadow: -1px 1px 26px -4px rgba(0,0,0,0.86);
+    -moz-box-shadow: -1px 1px 26px -4px rgba(0,0,0,0.86);
+    transition:  0.3s;
+}
+
+.modal-container .modal-content .borrar-producto {
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+                    /*modal footer*/
+.modal-container .total-compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.modal-container .total-compra {
+    align-items: center;
+}
+
+.modal-container .total-compra p {}
+
+.modal-container .total-compra p span {
+    color: rgb(5, 5, 100);
+}
+
+.modal-container .total-compra .btn-comprar {
+    margin-top: 15px;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border:rgb(0, 0, 0) 1px solid;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.modal-container .total-compra .btn-comprar:hover{
+    
+    padding: 6px;
+    background-color: rgb(96, 85, 250);
+    color: white;
+    box-shadow: -1px 1px 26px -4px rgba(0,0,0,0.86);
+    -webkit-box-shadow: -1px 1px 26px -4px rgba(0,0,0,0.86);
+    -moz-box-shadow: -1px 1px 26px -4px rgba(0,0,0,0.86);
+    transition:  0.3s;
+}
+
+
+
+
+/**!   ----------- FOOTER  -------------------*/
+
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    border:1px rgb(188, 192, 240) solid;
+}
+
+footer a img {
+    height: 40px;
+    width: 40px;
+    margin-left: 12px;
+}
+footer a img:hover {
+    height: 42px;
+    width: 42px;
+}
+
+footer div {
+    display: flex ;
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+footer div i {
+    color: rgb(94, 97, 240);
+    font-size: 25px;
+    margin: 12px;
+    transition: 0,3s;
+    /* margin-left: 3px; */
+}
+
+footer div i:hover{
+    font-size: 27px;
+    color: beige;
+}
+
+                    /*!MEDIA QUERYS**/
+
+@media screen and (max-width: 985px) {
+/*-------------------- 985 -----------------------*/
+/**--------HEADER-------*/
+    header nav #logo {
+        height: 40px;
+    }
+
+    header nav div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1px;
+    }
+    
+    header nav div a{
+        width: 110px;
+        margin-right: 20px;
+        font-weight:500;
+    }
+
+    header nav div a:hover {
+        font-weight: 600;
+    }
+
+    header nav div .ver-carrito{
+        height: 40px;
+    }
+/**-------INDEX-----------*/
+    .hero {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+        width: 90%;
+    }
+
+    .hero h2{
+        width: 90%;
+        text-align: center;
+        padding: 3px;
+    } 
+
+/**-------SUPLEMENTOS-----------*/
+
+    .main-suplementos .productos-container {
+        gap: 18px;
+    }
+            /*Pagos*/
+    .gridPagos{
+        width: 70%;
+    }
+
+/**-------MODAL CONTAINER----------*/
+
+                    /*modal body*/
+    .modal-container .modal-content {
+        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+    }
+    .modal-container .modal-content h3{
+        width: 19%;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .modal-container .modal-content img {
+        align-items: center;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .modal-container .modal-content .sumar{
+        font-weight: bold;
+        font-size: 20px; 
+    }
+    .modal-container .modal-content .CantidadNum{
+        font-size: 18px;
+        margin-left: 3px;
+    }
+    .modal-container .modal-content .restar{
+        font-weight: bold;
+        font-size: 20px; 
+    }
+    .modal-container .modal-content .quitar-producto{
+        padding: 5px;
+        margin-top: 8px;
+        font-weight: 500;
+    }
+    .modal-container .modal-content .quitar-producto:hover{
+        padding: 6px;
+    }
+
+                    /*modal footer*/
+
+    .modal-container .total-compra {
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .modal-container .total-compra p span {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .modal-container .total-compra .btn-comprar {
+        margin-top: 15px;
+        width: 70%;
+        font-weight: 500;
+    }
+    .modal-container .total-compra .btn-comprar:hover{
+        padding: 6px;
+    background-color: rgb(96, 85, 250);
+    }
+}
+
+@media screen and (max-width: 890px) {
+                    /*Pagos*/
+    .gridPagos {
+        width: 70%;
+    }             
+                    /*Modal*/
+    .modal-container {
+        background-image: url(../img/back2.jpg);
+        background-size: cover;
+        /* border: 2px rgb(168, 168, 168) solid; */
+    }
+    .modal-container .modal-content {
+        background-image: linear-gradient(to bottom right, rgb(36, 36, 36),rgb(117, 115, 115));
+        border: black 1px solid;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 10px;
+    }
+    .modal-container .modal-content img {
+    }
+    .modal-container .modal-content h3{
+        margin-bottom: 5px;
+        width: 50%;
+        font-size: 19px;
+    }
+    .modal-container .modal-content div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px
+    }
+    .modal-container .modal-content div .sumar{
+        font-weight: bold;
+        font-size: 20px; 
+    }
+    .modal-container .modal-content div .CantidadNum{
+        font-size: 18px;
+        margin-left: 3px;
+    }
+    .modal-container .modal-content div .restar{
+        font-weight: bold;
+        font-size: 20px; 
+    }
+    .modal-container .modal-content .quitar-producto{
+        margin-bottom: 10px;
+    }
+    .modal-container .modal-content .quitar-producto:hover{
+        padding: 6px;
+    }
+    
+    
+                        /*modal footer*/
+    .modal-container .total-compra {
+        margin: 12px;
+        background-color: rgb(173, 175, 175);
+        border-radius: 5px;
+    }
+    
+    .modal-container .total-compra p span {
+        font-size: 22px;
+        font-weight: 600;
+        
+    }
+    
+    .modal-container .total-compra .btn-comprar {
+        margin-top: 15px;
+        width: 70%;
+        font-weight: 500;
+    }
+    .modal-container .total-compra .btn-comprar:hover{
+        padding: 6px;
+        background-color: rgb(96, 85, 250);
+    }
+
+}
+
+/*-------------------- 748 -----------------------*/
+@media screen and (max-width: 748px) {
+
+/**-------INDEX-----------*/
+    .hero img {
+        width: 60%;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .hero a h3 {
+        font-size: 24px;
+    }
+/**-------FOOTER-----------*/
+    footer a img {
+        height: 32px;
+        width: 32px;
+    }
+    footer a img:hover {
+        height: 34px;
+        width: 34px;
+    }
+
+    footer div i {
+        color: rgb(94, 97, 240);
+        font-size: 22px;
+        margin: 10px;
+    }
+    footer div i:hover{
+        font-size: 24px;
+        color: beige;
+    }
+    /**-------SUPLEMENTOS----------*/
+                /*Pagos*/
+    .gridPagos{
+        width: 80%;
+    }
+    /**-------MODAL CONTAINER----------*/
+
+                    /* Modal header*/
+                    
+                    /*Header Title*/
+
+    .modal-container .modal-header-button {
+        font-size: 20px;
+    }
+
+                        /*modal body*/
+    
+    .modal-container .modal-content .quitar-producto{
+        padding: 5px;
+        font-weight: 500;
+    }
+
+                        /*modal footer*/
+    .modal-container .total-compra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 25px;
+        padding: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .modal-container .total-compra p span {
+    }
+
+    .modal-container .total-compra .btn-comprar {
+        margin-top: 15px;
+        width: 70%;
+        font-weight: 500;
+    }
+    .modal-container .total-compra .btn-comprar:hover{
+        padding: 6px;
+        background-color: rgb(96, 85, 250);
+}
+}
+
+
+@media screen and (max-width: 680px) {
+    /*-------------------- 680 -----------------------*/
+/**--------HEADER-------*/
+    header nav #logo {
+        height: 36px;
+    }
+
+    header nav div a{
+        width: 110px;
+        margin-right: 16px;
+    }
+
+    header nav div .ver-carrito{
+        font-size: 22px;
+    }
+/**-------INDEX-----------*/
+    .hero h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+    .hero h2{
+        font-size: 21px;
+        
+    } 
+
+    .hero a h3{
+        font-size: 18px;
+    }
+/**-------SUPLEMENTOS-----------*/    
+    .main-suplementos{
+        background-image: url(../img/back.jpg);
+        min-height: 100vh;
+    }
+
+    .main-suplementos .productos-container {
+        width: 90%;
+    }
+
+    .main-suplementos .productos-container div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 400px;
+        background-color: rgb(167, 161, 161);
+        padding: 3px;
+    }
+
+    .main-suplementos .productos-container div h3 {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .main-suplementos .productos-container div img {
+        height: 180px;
+        width: 175px;
+        aspect-ratio: 1.1;
+
+    }
+
+    .main-suplementos .productos-container div span {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .productos-container div button {
+        margin: 5px;
+        text-align: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+                /*Pagos*/    
+    .gridPagos{
+        width: 90%;
+    }
+/**-------MODAL-------*/
+    .modal-container .modal-content{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .modal-container .modal-content{
+        width: 80%;
+}
+}
+
+@media screen and (max-width: 490px) {
+    /*-------------------- 490 -----------------------*/
+/**--------HEADER-------*/
+    header nav #logo {
+        height: 29px;
+    }
+    header nav div {
+        font-size: 13px;
+    }
+    header nav div a {
+        width: 100%;
+    }
+    header nav div .ver-carrito{
+        font-size: 22px;
+    }
+/**-------INDEX-----------*/
+    .hero h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .hero h2{
+        font-size: 19px;
+    } 
+    .hero a h3{
+        font-size: 16px;
+    }
+
+/**-------SUPLEMENTOS-----------*/
+            /*pagos*/
+    .gridPagos{
+        width: 100%;
+    }
+    .gridPagos .parrafo1{    
+        text-align: center;
+        font-size: 15px;
+    }
+    .gridPagos .parrafo2{    
+        text-align: center;
+        font-size: 15px;
+    }
+    .gridPagos .parrafo3{    
+        text-align: center;
+        font-size: 15px;
+    }
+
+                /*Modal*/
+    .modal-container .modal-content h3{
+        width: 90%;
+
+    }
+}
