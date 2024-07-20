@@ -168,7 +168,7 @@ main{
 .main-suplementos .productos-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 20px;
@@ -177,16 +177,16 @@ main{
 .main-suplementos .productos-container .tarjeta-producto-carrito {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 400px;
+    align-items: center;
+    justify-content:center;
     background-color: rgb(167, 161, 161);
     padding: 3px;
     margin-bottom: 10px;
 }
 
 .main-suplementos .productos-container div h3 {
-    margin: 5px;
-    text-align: center;
+    text-align: justify;
+    justify-content: center;
 }
 
 .main-suplementos .productos-container div h4 {
@@ -198,7 +198,7 @@ main{
 .main-suplementos .productos-container div img {
     /* width: 100%; */
     height: 180px;
-    width: 140;
+    max-width: 200px;
     aspect-ratio: 1.2;
     overflow-x: hidden;
     
